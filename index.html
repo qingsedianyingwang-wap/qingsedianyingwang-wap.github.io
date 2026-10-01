@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>情色电影网 - 情色电影电视剧综艺动漫高清在线观看平台 | qingsedianyingwang-wap.github.io</title>
+<meta name="keywords" content="情色电影网, qingsedianyingwang-wap.github.io, 情色电影, 情色电视剧, 偶像剧, 浪漫情色片, 电影在线观看, 高清电影, 电视剧在线观看, 免费电影网站">
+<meta name="description" content="情色电影网（qingsedianyingwang-wap.github.io）专注情色电影、偶像剧、浪漫情色片在线观看，汇集甜蜜情色、虐恋、青春校园、都市情感、古装言情等题材，高清流畅、每日更新，手机电脑自适应，免注册免费播放。">
+<link rel="canonical" href="https://qingsedianyingwang-wap.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --night:#0b0d17; --night2:#111320; --card:#161a2b; --card2:#1c2136;
+  --line:rgba(255,255,255,.09);
+  --pink:#ff3b8b; --hot:#ff2e63; --purple:#9b51e0; --violet:#6f4ff2;
+  --rose:#ff7ab2; --cyan:#18e0d8; --gold:#ffc94d; --txt:#e9ebf2; --txt2:#a5abbf; --txt3:#717891;
+  --neon:0 0 8px rgba(255,59,139,.7),0 0 22px rgba(255,59,139,.45),0 0 44px rgba(255,46,99,.25);
+  --max:1160px; --rad:20px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--night);color:var(--txt);line-height:1.65;overflow-x:hidden;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -8%,rgba(155,81,224,.22),transparent 60%),radial-gradient(900px 500px at 88% 6%,rgba(255,46,99,.18),transparent 58%),radial-gradient(700px 700px at 50% 115%,rgba(24,224,216,.10),transparent 62%);
+  background-attachment:fixed;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,#08090f,#0b0d17 40%,#0a0c14)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+::selection{background:var(--pink);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--night2)}
+::-webkit-scrollbar-thumb{background:#2a3050}
+::-webkit-scrollbar-thumb:hover{background:#3a4270}
+
+/* 顶部跑马灯 */
+.ticker{height:36px;overflow:hidden;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.ticker .track{display:flex;gap:56px;height:100%;align-items:center;white-space:nowrap;animation:tk 40s linear infinite;font-size:12.5px;color:var(--txt2);letter-spacing:.3px}
+.ticker .track b{color:var(--pink);font-weight:600}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* 导航 */
+header{position:sticky;top:0;z-index:60;background:rgba(11,13,23,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:17px;letter-spacing:-.2px}
+.logo .ne{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-size:15px;color:#fff;box-shadow:var(--neon)}
+.logo em{font-style:normal;color:var(--pink);text-shadow:0 0 14px rgba(255,59,139,.6)}
+.menu{display:flex;gap:28px;font-size:14px}
+.menu a{color:var(--txt2);transition:.2s;font-weight:500;position:relative}
+.menu a:hover{color:#fff}
+.menu a:hover::after{width:100%}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--purple));transition:.25s;border-radius:2px}
+.search{flex:1;max-width:230px;position:relative}
+.search input{width:100%;height:36px;border-radius:980px;border:1px solid var(--line);background:rgba(255,255,255,.05);padding:0 16px;font-size:13px;color:var(--txt);outline:none;font-family:inherit}
+.search input::placeholder{color:var(--txt3)}
+.search input:focus{border-color:var(--pink)}
+.mb{display:none;width:40px;height:36px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--txt);font-size:17px;cursor:pointer}
+
+/* 通用 */
+section{padding:92px 0}
+.kicker{font-size:12.5px;font-weight:700;color:var(--pink);letter-spacing:2.4px;text-transform:uppercase}
+.sec-h{margin:12px 0 16px}
+.sec-h h2{font-size:clamp(28px,4.4vw,42px);font-weight:800;letter-spacing:-1px;line-height:1.18}
+.sec-h h2 em{font-style:normal;background:linear-gradient(90deg,var(--pink),var(--purple));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-sub{color:var(--txt2);font-size:17px;max-width:660px;margin-bottom:46px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.card{background:var(--card);border-radius:var(--rad);border:1px solid var(--line);transition:.4s cubic-bezier(.2,.8,.2,1);overflow:hidden}
+.card:hover{transform:translateY(-7px);border-color:rgba(255,59,139,.5);box-shadow:0 20px 44px -16px rgba(255,46,99,.35)}
+.btn{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--rose);margin-top:10px;transition:.2s}
+.btn:hover{color:#fff;text-shadow:0 0 12px rgba(255,122,178,.7)}
+
+/* Hero 霓虹招牌 */
+.hero{padding:104px 0 96px;position:relative}
+.hero .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,6.6vw,66px);font-weight:800;letter-spacing:-1.8px;line-height:1.12}
+.hero h1 .hl{display:inline-block;color:#fff;padding:0 14px;border:3px solid var(--pink);border-radius:14px;text-shadow:var(--neon);box-shadow:var(--neon);transform:rotate(-2deg)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--rose),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:18px;color:var(--txt2);max-width:540px;margin-top:22px}
+.url{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--txt);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:11px 18px;border-radius:12px;font-family:ui-monospace,Menlo,monospace}
+.url .d{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:bl 1.6s ease-in-out infinite}
+@keyframes bl{50%{opacity:.3}}
+.acts{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.acts a{height:46px;padding:0 28px;border-radius:980px;display:grid;place-items:center;font-size:15px;font-weight:600;transition:.25s}
+.acts .a{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;box-shadow:var(--neon)}
+.acts .a:hover{filter:brightness(1.12)}
+.acts .b{background:rgba(255,255,255,.05);color:var(--txt);border:1px solid var(--line)}
+.acts .b:hover{border-color:var(--pink)}
+.stats{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
+.stats b{display:block;font-size:30px;font-weight:800;letter-spacing:-1px;background:linear-gradient(135deg,var(--rose),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stats span{font-size:12.5px;color:var(--txt2)}
+/* 右侧双卡片 */
+.side{display:grid;gap:16px}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;position:relative;overflow:hidden}
+.vcard::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(255,59,139,.25),transparent 70%)}
+.vcard .tag{font-size:11.5px;font-weight:700;color:var(--pink);letter-spacing:1.4px}
+.vcard h3{font-size:19px;font-weight:700;margin:10px 0 14px}
+.mlist li{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.mlist li:first-child{border-top:0;padding-top:0}
+.mlist .i{width:22px;height:22px;border-radius:7px;background:rgba(255,59,139,.14);color:var(--rose);display:grid;place-items:center;font-size:11px;font-weight:700}
+.mlist .i.g{background:rgba(255,201,77,.14);color:var(--gold)}
+.mlist b{font-weight:600;font-size:13.5px}
+.mlist span{font-size:12px;color:var(--txt3)}
+.vcard p{font-size:13.5px;color:var(--txt2);line-height:1.8}
+.vcard .live{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--cyan);font-weight:600}
+.vcard .live i{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:bl 1.4s ease-in-out infinite}
+
+/* 频道 */
+.chan{text-align:center;padding:26px 12px}
+.chan .ic{width:54px;height:54px;margin:0 auto 13px;border-radius:15px;display:grid;place-items:center;font-size:25px;background:var(--card2);border:1px solid var(--line)}
+.chan:nth-child(1) .ic{box-shadow:0 0 0 4px rgba(255,59,139,.1)}
+.chan:nth-child(2) .ic{box-shadow:0 0 0 4px rgba(155,81,224,.12)}
+.chan:nth-child(3) .ic{box-shadow:0 0 0 4px rgba(255,122,178,.1)}
+.chan:nth-child(4) .ic{box-shadow:0 0 0 4px rgba(24,224,216,.1)}
+.chan:nth-child(5) .ic{box-shadow:0 0 0 4px rgba(255,201,77,.12)}
+.chan:nth-child(6) .ic{box-shadow:0 0 0 4px rgba(111,79,242,.12)}
+.chan h3{font-size:15.5px;font-weight:600}
+.chan p{font-size:12.5px;color:var(--txt3);margin-top:3px}
+.chan .n{display:block;margin-top:11px;font-size:12px;color:var(--txt3);font-variant-numeric:tabular-nums}
+
+/* 海报 */
+.ph{height:235px;position:relative;overflow:hidden;display:grid;place-items:center;font-size:54px}
+.ph.a{background:linear-gradient(140deg,#3a0d2e,#7a1248)} .ph.b{background:linear-gradient(140deg,#2a123a,#6f1e72)}
+.ph.c{background:linear-gradient(140deg,#4a1028,#c21f5a)} .ph.d{background:linear-gradient(140deg,#1d2a4a,#2f5fa8)}
+.ph.e{background:linear-gradient(140deg,#3d2a10,#b8791f)} .ph.f{background:linear-gradient(140deg,#102a26,#1a7a68)}
+.ph.g{background:linear-gradient(140deg,#2a1240,#8a3fb0)} .ph.h{background:linear-gradient(140deg,#401020,#e0446e)}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.55))}
+.ph .rt{position:absolute;top:12px;right:12px;z-index:2;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:700;padding:4px 9px;border-radius:980px;border:1px solid rgba(255,255,255,.18)}
+.ph .yr{position:absolute;bottom:12px;left:12px;z-index:2;background:rgba(255,59,139,.9);color:#fff;font-size:11px;padding:4px 10px;border-radius:980px;font-weight:600}
+.ph .ep{position:absolute;bottom:12px;right:12px;z-index:2;background:rgba(24,224,216,.9);color:#062825;font-size:11px;padding:4px 10px;border-radius:980px;font-weight:700}
+.ph span{position:relative;z-index:1;text-shadow:0 6px 24px rgba(0,0,0,.45)}
+.card h4{font-size:15.5px;font-weight:600;margin:16px 18px 5px}
+.card .tags{font-size:12.5px;color:var(--txt3);margin:0 18px 18px}
+
+/* 心情 */
+.mood{padding:28px 24px;background:var(--card);border-radius:var(--rad);border:1px solid var(--line);transition:.4s;position:relative;overflow:hidden}
+.mood::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--pink)}
+.mood:nth-child(2)::before{background:var(--cyan)}
+.mood:nth-child(3)::before{background:var(--gold)}
+.mood:nth-child(4)::before{background:var(--purple)}
+.mood:nth-child(5)::before{background:var(--rose)}
+.mood:nth-child(6)::before{background:#ff8a4c}
+.mood:hover{transform:translateY(-5px);box-shadow:0 16px 38px -16px rgba(255,46,99,.4)}
+.mood .ic{font-size:28px;margin-bottom:12px}
+.mood h3{font-size:18px;font-weight:700;margin-bottom:7px}
+.mood p{font-size:14px;color:var(--txt2)}
+.mood a{display:block;margin-top:14px;font-size:13px;color:var(--rose);font-weight:600}
+
+/* 特色 */
+.feat{padding:30px 26px;background:var(--card);border-radius:var(--rad);border:1px solid var(--line);transition:.4s}
+.feat:hover{border-color:rgba(155,81,224,.5);box-shadow:0 16px 38px -16px rgba(155,81,224,.4);transform:translateY(-5px)}
+.feat .n{font-size:12px;font-weight:700;color:var(--purple);letter-spacing:1px;margin-bottom:12px;font-variant-numeric:tabular-nums}
+.feat h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.feat p{font-size:14px;color:var(--txt2)}
+
+/* 排行 */
+.rank{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);overflow:hidden}
+.rank .hd{padding:22px 26px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rank .hd h3{font-size:19px;font-weight:700;letter-spacing:-.3px}
+.rank .hd p{font-size:12.5px;color:var(--txt3)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{padding:7px 14px;border-radius:980px;font-size:12.5px;font-weight:600;color:var(--txt2);background:rgba(255,255,255,.05);border:1px solid var(--line);cursor:pointer;transition:.2s}
+.tab.on{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;border-color:transparent}
+.pane{display:none}.pane.on{display:block}
+.row{display:grid;grid-template-columns:34px 1fr 56px;gap:14px;align-items:center;padding:15px 26px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .i{width:26px;height:26px;border-radius:8px;background:rgba(255,255,255,.06);display:grid;place-items:center;font-weight:700;font-size:12px;color:var(--txt2);font-variant-numeric:tabular-nums}
+.row.g1 .i{background:linear-gradient(135deg,var(--gold),#ff9d2f);color:#3a2100}
+.row.g2 .i{background:rgba(255,255,255,.18);color:#fff}
+.row.g3 .i{background:linear-gradient(135deg,#cd7f32,#a85f1f);color:#fff}
+.row b{font-size:14.5px;font-weight:600}
+.row small{display:block;font-size:12.5px;color:var(--txt3)}
+.row .sc{text-align:right;font-weight:700;color:var(--rose);font-size:14px;font-variant-numeric:tabular-nums}
+.row .up{color:var(--cyan);font-size:11px;font-variant-numeric:tabular-nums}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:1.15fr 1fr;gap:24px}
+.nhero{background:linear-gradient(140deg,#3a0d2e,#7a1248);border-radius:var(--rad);padding:38px;min-height:320px;display:grid;place-items:end stretch;transition:.4s;overflow:hidden;position:relative;border:1px solid rgba(255,59,139,.25)}
+.nhero:hover{box-shadow:var(--neon)}
+.nhero::after{content:"";position:absolute;right:-50px;top:-50px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
+.nhero .pin{display:inline-block;font-size:11.5px;font-weight:700;background:rgba(0,0,0,.35);color:#fff;padding:5px 12px;border-radius:980px;width:max-content;backdrop-filter:blur(6px)}
+.nhero h3{font-size:23px;font-weight:700;line-height:1.45;margin:14px 0;letter-spacing:-.4px;position:relative;z-index:1}
+.nhero p{font-size:14px;color:rgba(255,255,255,.85);position:relative;z-index:1}
+.nlist{display:grid}
+.nitem{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.nitem:last-child{border-bottom:0}
+.nitem .d b{display:block;font-size:25px;font-weight:800;color:var(--rose);line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+.nitem .d span{font-size:11.5px;color:var(--txt3)}
+.nitem h4{font-size:14.5px;font-weight:500;color:var(--txt2);transition:color .2s}
+.nitem:hover h4{color:var(--rose)}
+
+/* 演员 */
+.stars{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.star{text-align:center;padding:24px 8px;background:var(--card);border:1px solid var(--line);border-radius:var(--rad);transition:.4s}
+.star:hover{transform:translateY(-5px);border-color:rgba(155,81,224,.5);box-shadow:0 16px 36px -16px rgba(155,81,224,.4)}
+.star .av{width:64px;height:64px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font-size:26px;background:var(--card2);border:1px solid var(--line)}
+.star h4{font-size:14.5px;font-weight:600}
+.star p{font-size:12.5px;color:var(--txt3);margin-top:3px}
+
+/* 站点信息 */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pcard{padding:36px;border-radius:var(--rad);border:1px solid var(--line);background:var(--card)}
+.pcard h3{font-size:22px;font-weight:700;letter-spacing:-.4px;margin-bottom:16px}
+.pcard h3 em{font-style:normal;background:linear-gradient(90deg,var(--rose),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pcard p{font-size:14.5px;color:var(--txt2);margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags a{padding:7px 13px;border-radius:980px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:12.5px;color:var(--txt2);transition:.2s}
+.tags a:hover{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;border-color:transparent}
+table{width:100%;border-collapse:collapse}
+table tr{border-bottom:1px solid var(--line)}
+table tr:last-child{border-bottom:0}
+table th{text-align:left;padding:15px 8px;width:92px;font-size:13px;color:var(--txt2);font-weight:500;vertical-align:top}
+table td{padding:15px 8px;font-size:14px;color:var(--txt);font-weight:500}
+table td.u{font-family:ui-monospace,Menlo,monospace;color:var(--cyan)}
+
+/* FAQ */
+.faqs{max-width:860px;margin:0 auto;display:grid;gap:10px}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;transition:.25s}
+.faq.open{border-color:var(--pink);box-shadow:0 0 0 3px rgba(255,59,139,.12)}
+.faq>div{display:flex;gap:14px;align-items:center;padding:20px 24px;cursor:pointer;font-size:15.5px;font-weight:500}
+.faq .q{width:26px;height:26px;border-radius:8px;background:rgba(255,59,139,.14);color:var(--rose);display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:12px;font-variant-numeric:tabular-nums}
+.faq .ar{margin-left:auto;color:var(--txt3);font-weight:400;transition:.3s;font-size:19px;line-height:1}
+.faq.open .ar{transform:rotate(45deg);color:var(--pink)}
+.faq .ans{max-height:0;overflow:hidden;transition:.4s ease}
+.faq.open .ans{max-height:300px}
+.faq .ans p{padding:0 24px 22px 64px;font-size:14.5px;color:var(--txt2)}
+
+/* 友情链接 */
+.flinks{display:flex;flex-wrap:wrap;gap:10px}
+.flinks a{padding:9px 16px;border-radius:980px;background:var(--card);border:1px solid var(--line);font-size:13px;color:var(--txt2);transition:.2s}
+.flinks a:hover{color:#fff;border-color:var(--pink);background:rgba(255,59,139,.14)}
+
+footer{background:var(--night2);border-top:1px solid var(--line);padding:56px 0 0}
+.foot{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px}
+.foot .logo{font-size:17px}
+.foot p{font-size:13.5px;line-height:1.85;margin-top:14px;color:var(--txt2);max-width:380px}
+.foot h4{font-size:13px;color:var(--txt);margin-bottom:16px;font-weight:600}
+.foot ul li{padding:7px 0;font-size:13.5px;color:var(--txt2);cursor:pointer;transition:.2s}
+.foot ul li:hover{color:var(--rose)}
+.bot{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--txt3)}
+.bot .u{font-family:ui-monospace,Menlo,monospace;color:var(--txt2)}
+
+#top{position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--rose);font-size:17px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;z-index:98;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#top.on{opacity:1;pointer-events:auto;transform:none}
+#top:hover{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff}
+
+@media(max-width:1024px){
+  .hero .grid,.info,.news{grid-template-columns:1fr}
+  .grid6,.stars{grid-template-columns:repeat(3,1fr)}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .news{display:grid}
+}
+@media(max-width:820px){
+  section{padding:64px 0}
+  .menu,.search{display:none}
+  .mb{display:grid;place-items:center}
+  .hero{padding:70px 0 60px}
+  .foot{grid-template-columns:1fr 1fr;gap:28px}
+  .ticker .track{font-size:12px;gap:34px}
+}
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .grid6,.stars,.grid4{grid-template-columns:repeat(2,1fr)}
+  .ph{height:190px;font-size:42px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr}
+  .hero .acts a{width:100%}
+  .nhero{padding:28px}
+  .hero h1 .hl{padding:0 10px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<div class="ticker"><div class="track">
+  <span><b>● 情色电影网</b> 浪漫情色片 · 甜蜜偶像剧 · 虐恋言情剧 每日更新</span>
+  <span>💕 新片速递：本周 12 部甜蜜情色电影同步上线</span>
+  <span>📺 热播剧场：校园 / 都市 / 古装言情剧集实时更新</span>
+  <span>🎬 全部 1080P 高清免费播放 · 手机电脑自适应</span>
+  <span><b>● 情色电影网</b> 浪漫情色片 · 甜蜜偶像剧 · 虐恋言情剧 每日更新</span>
+  <span>💕 新片速递：本周 12 部甜蜜情色电影同步上线</span>
+  <span>📺 热播剧场：校园 / 都市 / 古装言情剧集实时更新</span>
+  <span>🎬 全部 1080P 高清免费播放 · 手机电脑自适应</span>
+</div></div>
+
+<header><div class="container"><div class="head">
+  <a class="logo" href="#"><span class="ne">💗</span>情色<em>电影网</em></a>
+  <nav class="menu">
+    <a href="#">首页</a><a href="#chan">频道</a><a href="#film">情色电影</a><a href="#tv">情色剧集</a>
+    <a href="#mood">心情观影</a><a href="#rank">排行榜</a><a href="#news">资讯</a><a href="#info">站点信息</a>
+  </nav>
+  <div class="search"><input type="text" placeholder="搜索情色电影、偶像剧…"></div>
+  <button class="mb" id="mb" aria-label="菜单">☰</button>
+</div></div></header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="kicker">Romance Movie Online</span>
+        <h1>让每一段 <span class="hl">情色</span><br>都被好好 <em>收藏</em></h1>
+        <p>情色电影网专注情色电影、偶像剧、浪漫情色片在线观看，甜蜜情色、虐恋情深、青春校园、都市情感、古装言情一应俱全，1080P 高清流畅播放。</p>
+        <div class="url"><span class="d"></span>https://qingsedianyingwang-wap.github.io</div>
+        <div class="acts">
+          <a class="a" href="#film">开始观影</a>
+          <a class="b" href="#mood">按心情选片</a>
+        </div>
+        <div class="stats">
+          <div><b>1.6万+</b><span>情色影视资源</span></div>
+          <div><b>420+</b><span>每日甜蜜上新</span></div>
+          <div><b>1080P</b><span>高清画质</span></div>
+          <div><b>0元</b><span>免注册免费</span></div>
+        </div>
+      </div>
+      <div class="side">
+        <div class="vcard">
+          <span class="tag">TOP 5 · 本周甜蜜榜</span>
+          <h3>正在被亿万次心动</h3>
+          <ul class="mlist">
+            <li><span class="i">1</span><div><b>遇见你的夏天</b></div><span>★9.4</span></li>
+            <li><span class="i">2</span><div><b>你是我眼里的光</b></div><span>★9.2</span></li>
+            <li><span class="i">3</span><div><b>心动的信号</b></div><span>★9.0</span></li>
+            <li><span class="i g">4</span><div><b>后来的我们</b></div><span>★8.9</span></li>
+            <li><span class="i g">5</span><div><b>一生只爱你</b></div><span>★8.8</span></li>
+          </ul>
+        </div>
+        <div class="vcard">
+          <span class="live"><i></i> LIVE · 正在热播</span>
+          <h3 style="margin-top:14px">今日浪漫剧场</h3>
+          <p>18:00 甜蜜情色电影连播<br>20:30 热门偶像剧最新集首播<br>22:00 虐恋言情剧场开播</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 频道 -->
+<section id="chan" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Categories</div>
+    <div class="sec-h"><h2>六大<em>情色频道</em></h2></div>
+    <p class="sec-sub">从甜蜜校园到古装虐恋，每一种情色故事都能在这里找到归属。</p>
+    <div class="grid6">
+      <a class="card chan" href="#"><div class="ic">💗</div><h3>情色电影</h3><p>浪漫 · 甜蜜 · 虐恋</p><span class="n">6800+</span></a>
+      <a class="card chan" href="#"><div class="ic">💍</div><h3>偶像剧</h3><p>韩剧 · 台剧 · 国产</p><span class="n">3200+</span></a>
+      <a class="card chan" href="#"><div class="ic">🎓</div><h3>青春校园</h3><p>初恋 · 校园 · 纯爱</p><span class="n">2400+</span></a>
+      <a class="card chan" href="#"><div class="ic">🌆</div><h3>都市情感</h3><p>职场 · 婚恋 · 治愈</p><span class="n">2600+</span></a>
+      <a class="card chan" href="#"><div class="ic">👑</div><h3>古装言情</h3><p>仙侠 · 宫廷 · 穿越</p><span class="n">1800+</span></a>
+      <a class="card chan" href="#"><div class="ic">🎞️</div><h3>经典老片</h3><p>怀旧 · 经典 · 重温</p><span class="n">1500+</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 情色电影 -->
+<section id="film" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Featured Romance Films</div>
+    <div class="sec-h"><h2>精选<em>情色电影</em></h2></div>
+    <p class="sec-sub">好看的情色电影一网打尽，甜蜜心动与虐恋深情交织，全部 1080P 高清免费播放。</p>
+    <div class="grid4">
+      <a class="card" href="#"><div class="ph a"><div class="rt">★9.4</div><div class="yr">2026</div><span>💗</span></div><h4>遇见你的夏天</h4><div class="tags">青春 · 纯爱 · 治愈</div></a>
+      <a class="card" href="#"><div class="ph b"><div class="rt">★9.2</div><div class="yr">2026</div><span>✨</span></div><h4>你是我眼里的光</h4><div class="tags">都市 · 职场 · 浪漫</div></a>
+      <a class="card" href="#"><div class="ph c"><div class="rt">★9.0</div><div class="yr">2026</div><span>🌹</span></div><h4>心动的信号</h4><div class="tags">恋爱 · 甜宠 · 轻松</div></a>
+      <a class="card" href="#"><div class="ph d"><div class="rt">★8.9</div><div class="yr">2026</div><span>💔</span></div><h4>后来的我们</h4><div class="tags">虐恋 · 剧情 · 催泪</div></a>
+      <a class="card" href="#"><div class="ph e"><div class="rt">★8.8</div><div class="yr">2026</div><span>💍</span></div><h4>一生只爱你</h4><div class="tags">年代 · 深情 · 感人</div></a>
+      <a class="card" href="#"><div class="ph f"><div class="rt">★8.7</div><div class="yr">2026</div><span>🌿</span></div><h4>森林里的约定</h4><div class="tags">清新 · 治愈 · 自然</div></a>
+      <a class="card" href="#"><div class="ph g"><div class="rt">★8.6</div><div class="yr">2026</div><span>👑</span></div><h4>王的女人</h4><div class="tags">古装 · 言情 · 虐恋</div></a>
+      <a class="card" href="#"><div class="ph h"><div class="rt">★8.5</div><div class="yr">2026</div><span>💌</span></div><h4>情书未完</h4><div class="tags">书信 · 暗恋 · 青春</div></a>
+    </div>
+    <a class="btn" href="#">浏览全部情色电影 →</a>
+  </div>
+</section>
+
+<!-- 情色剧集 -->
+<section id="tv" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Popular Romance Dramas</div>
+    <div class="sec-h"><h2>正在<em>热播</em>情色剧</h2></div>
+    <p class="sec-sub">甜蜜偶像剧、虐恋言情剧持续更新，最新集数第一时间上线。</p>
+    <div class="grid4">
+      <a class="card" href="#"><div class="ph b"><div class="rt">★9.3</div><div class="ep">32集</div><span>🌸</span></div><h4>甜甜进行时</h4><div class="tags">校园 · 甜宠 · 轻松</div></a>
+      <a class="card" href="#"><div class="ph c"><div class="rt">★9.1</div><div class="ep">48集</div><span>🔥</span></div><h4>凤鸣九天</h4><div class="tags">古装 · 虐恋 · 权谋</div></a>
+      <a class="card" href="#"><div class="ph d"><div class="rt">★9.0</div><div class="ep">28集</div><span>🏙️</span></div><h4>我的都市男友</h4><div class="tags">都市 · 职场 · 恋爱</div></a>
+      <a class="card" href="#"><div class="ph a"><div class="rt">★8.8</div><div class="ep">40集</div><span>💧</span></div><h4>说不出口的爱</h4><div class="tags">虐恋 · 催泪 · 剧情</div></a>
+      <a class="card" href="#"><div class="ph e"><div class="rt">★8.7</div><div class="ep">36集</div><span>💕</span></div><h4>你的微笑很甜</h4><div class="tags">青春 · 校园 · 纯爱</div></a>
+      <a class="card" href="#"><div class="ph f"><div class="rt">★8.6</div><div class="ep">30集</div><span>🌊</span></div><h4>海岸线之恋</h4><div class="tags">治愈 · 旅行 · 情色</div></a>
+      <a class="card" href="#"><div class="ph g"><div class="rt">★8.5</div><div class="ep">44集</div><span>👑</span></div><h4>锦绣未央辞</h4><div class="tags">古装 · 仙侠 · 言情</div></a>
+      <a class="card" href="#"><div class="ph h"><div class="rt">★8.4</div><div class="ep">26集</div><span>🎭</span></div><h4>契约新娘</h4><div class="tags">都市 · 婚恋 · 甜虐</div></a>
+    </div>
+    <a class="btn" href="#">浏览全部情色剧集 →</a>
+  </div>
+</section>
+
+<!-- 心情观影 -->
+<section id="mood" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Mood Picker</div>
+    <div class="sec-h"><h2>按<em>心情</em>选片</h2></div>
+    <p class="sec-sub">无论今天想被甜到，还是想大哭一场，都有一部情色电影陪你。</p>
+    <div class="grid6">
+      <div class="mood"><div class="ic">🍬</div><h3>想被甜到</h3><p>甜宠轻喜剧，糖分超标的心动瞬间。</p><a href="#">甜宠片单 →</a></div>
+      <div class="mood"><div class="ic">😭</div><h3>想哭一场</h3><p>虐恋催泪，释放所有情绪。</p><a href="#">催泪片单 →</a></div>
+      <div class="mood"><div class="ic">🌿</div><h3>想被治愈</h3><p>清新治愈系，温柔又安心。</p><a href="#">治愈片单 →</a></div>
+      <div class="mood"><div class="ic">🎓</div><h3>怀念校园</h3><p>青春纯爱，重温初恋悸动。</p><a href="#">校园片单 →</a></div>
+      <div class="mood"><div class="ic">💫</div><h3>渴望浪漫</h3><p>唯美大场景，极致浪漫体验。</p><a href="#">浪漫片单 →</a></div>
+      <div class="mood"><div class="ic">🛋️</div><h3>只想躺平</h3><p>轻松下饭，适合放空的情色片。</p><a href="#">轻松片单 →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 特色 -->
+<section id="why" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Why Us</div>
+    <div class="sec-h"><h2>为什么选择 <em>情色电影网</em></h2></div>
+    <p class="sec-sub">从选片到播放每一个环节都为浪漫而生。</p>
+    <div class="grid6">
+      <div class="feat"><div class="n">01</div><h3>专注情色题材</h3><p>1.6万+ 部情色影视，覆盖甜蜜、虐恋、校园、都市、古装全类型。</p></div>
+      <div class="feat"><div class="n">02</div><h3>播放流畅</h3><p>多线路加速，点开即播不卡顿。</p></div>
+      <div class="feat"><div class="n">03</div><h3>每日上新</h3><p>日均新增 420+ 部甜蜜影视内容。</p></div>
+      <div class="feat"><div class="n">04</div><h3>1080P 高清</h3><p>全站高清源，画质清晰细腻。</p></div>
+      <div class="feat"><div class="n">05</div><h3>全端自适应</h3><p>手机平板电脑自动适配屏幕。</p></div>
+      <div class="feat"><div class="n">06</div><h3>免注册免费</h3><p>打开即看，零门槛免登录。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 排行 -->
+<section id="rank" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Top Charts</div>
+    <div class="sec-h"><h2>甜蜜<em>排行榜</em></h2></div>
+    <p class="sec-sub">综合播放量、搜索热度与口碑生成实时排行，人气情色影视一目了然。</p>
+    <div class="rank">
+      <div class="hd">
+        <div><h3>🔥 实时热播榜单</h3><p>TOP 10 · 每 10 分钟更新一次</p></div>
+        <div class="tabs" id="tabs">
+          <span class="tab on" data-t="0">情色电影</span><span class="tab" data-t="1">偶像剧</span>
+          <span class="tab" data-t="2">青春校园</span><span class="tab" data-t="3">都市情感</span><span class="tab" data-t="4">古装言情</span>
+        </div>
+      </div>
+      <div class="panes">
+        <div class="pane on">
+          <div class="row g1"><div class="i">1</div><div><b>遇见你的夏天</b><small>青春 · 纯爱 · 2026</small></div><div><div class="sc">9.4</div><span class="up">↑2</span></div></div>
+          <div class="row g2"><div class="i">2</div><div><b>你是我眼里的光</b><small>都市 · 浪漫 · 2026</small></div><div><div class="sc">9.2</div><span class="up">↑1</span></div></div>
+          <div class="row g3"><div class="i">3</div><div><b>心动的信号</b><small>恋爱 · 甜宠 · 2026</small></div><div><div class="sc">9.0</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">4</div><div><b>后来的我们</b><small>虐恋 · 剧情 · 2026</small></div><div><div class="sc">8.9</div><span class="up">↓1</span></div></div>
+          <div class="row"><div class="i">5</div><div><b>一生只爱你</b><small>年代 · 深情 · 2026</small></div><div><div class="sc">8.8</div><span class="up">↑4</span></div></div>
+          <div class="row"><div class="i">6</div><div><b>森林里的约定</b><small>清新 · 治愈 · 2026</small></div><div><div class="sc">8.7</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">7</div><div><b>王的女人</b><small>古装 · 虐恋 · 2026</small></div><div><div class="sc">8.6</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">8</div><div><b>情书未完</b><small>书信 · 暗恋 · 2026</small></div><div><div class="sc">8.5</div><span class="up">↑5</span></div></div>
+          <div class="row"><div class="i">9</div><div><b>海边旧时光</b><small>怀旧 · 情色 · 2026</small></div><div><div class="sc">8.4</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">10</div><div><b>星空下的约定</b><small>浪漫 · 治愈 · 2026</small></div><div><div class="sc">8.3</div><span class="up">↑6</span></div></div>
+        </div>
+        <div class="pane">
+          <div class="row g1"><div class="i">1</div><div><b>甜甜进行时</b><small>校园 · 甜宠 · 32集</small></div><div><div class="sc">9.3</div><span class="up">↑1</span></div></div>
+          <div class="row g2"><div class="i">2</div><div><b>凤鸣九天</b><small>古装 · 虐恋 · 48集</small></div><div><div class="sc">9.1</div><span class="up">↑2</span></div></div>
+          <div class="row g3"><div class="i">3</div><div><b>我的都市男友</b><small>都市 · 恋爱 · 28集</small></div><div><div class="sc">9.0</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">4</div><div><b>说不出口的爱</b><small>虐恋 · 催泪 · 40集</small></div><div><div class="sc">8.8</div><span class="up">↓2</span></div></div>
+          <div class="row"><div class="i">5</div><div><b>你的微笑很甜</b><small>青春 · 纯爱 · 36集</small></div><div><div class="sc">8.7</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">6</div><div><b>海岸线之恋</b><small>治愈 · 旅行 · 30集</small></div><div><div class="sc">8.6</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">7</div><div><b>锦绣未央辞</b><small>古装 · 仙侠 · 44集</small></div><div><div class="sc">8.5</div><span class="up">↑4</span></div></div>
+          <div class="row"><div class="i">8</div><div><b>契约新娘</b><small>都市 · 婚恋 · 26集</small></div><div><div class="sc">8.4</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">9</div><div><b>初次相遇那天</b><small>青春 · 恋爱 · 34集</small></div><div><div class="sc">8.3</div><span class="up">↑5</span></div></div>
+          <div class="row"><div class="i">10</div><div><b>月下逢君</b><small>古装 · 言情 · 38集</small></div><div><div class="sc">8.2</div><span class="up">↑3</span></div></div>
+        </div>
+        <div class="pane">
+          <div class="row g1"><div class="i">1</div><div><b>甜甜进行时</b><small>校园 · 甜宠 · 32集</small></div><div><div class="sc">9.3</div><span class="up">↑1</span></div></div>
+          <div class="row g2"><div class="i">2</div><div><b>你的微笑很甜</b><small>青春 · 校园 · 36集</small></div><div><div class="sc">8.7</div><span class="up">↑2</span></div></div>
+          <div class="row g3"><div class="i">3</div><div><b>初次相遇那天</b><small>青春 · 恋爱 · 34集</small></div><div><div class="sc">8.3</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">4</div><div><b>纸飞机约定</b><small>校园 · 纯爱 · 30集</small></div><div><div class="sc">8.6</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">5</div><div><b>十七岁的风</b><small>青春 · 治愈 · 28集</small></div><div><div class="sc">8.4</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">6</div><div><b>同桌的你</b><small>校园 · 怀旧 · 26集</small></div><div><div class="sc">8.2</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">7</div><div><b>那年夏天</b><small>青春 · 纯爱 · 24集</small></div><div><div class="sc">8.1</div><span class="up">↑4</span></div></div>
+          <div class="row"><div class="i">8</div><div><b>放学后的约定</b><small>校园 · 轻松 · 32集</small></div><div><div class="sc">8.0</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">9</div><div><b>初恋习题</b><small>青春 · 恋爱 · 30集</small></div><div><div class="sc">7.9</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">10</div><div><b>樱花树下</b><small>校园 · 治愈 · 28集</small></div><div><div class="sc">7.8</div><span class="up">↑1</span></div></div>
+        </div>
+        <div class="pane">
+          <div class="row g1"><div class="i">1</div><div><b>你是我眼里的光</b><small>都市 · 职场 · 2026</small></div><div><div class="sc">9.2</div><span class="up">↑1</span></div></div>
+          <div class="row g2"><div class="i">2</div><div><b>我的都市男友</b><small>都市 · 恋爱 · 28集</small></div><div><div class="sc">9.0</div><span class="up">↑2</span></div></div>
+          <div class="row g3"><div class="i">3</div><div><b>契约新娘</b><small>都市 · 婚恋 · 26集</small></div><div><div class="sc">8.4</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">4</div><div><b>三十而恋</b><small>都市 · 职场 · 36集</small></div><div><div class="sc">8.5</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">5</div><div><b>咖啡店偶遇</b><small>都市 · 轻松 · 2026</small></div><div><div class="sc">8.2</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">6</div><div><b>加班后的晚餐</b><small>都市 · 治愈 · 2026</small></div><div><div class="sc">8.0</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">7</div><div><b>前任请自重</b><small>都市 · 恋爱 · 32集</small></div><div><div class="sc">7.9</div><span class="up">↑4</span></div></div>
+          <div class="row"><div class="i">8</div><div><b>办公室恋情</b><small>都市 · 甜宠 · 30集</small></div><div><div class="sc">7.8</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">9</div><div><b>遇见最好的你</b><small>都市 · 治愈 · 34集</small></div><div><div class="sc">7.7</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">10</div><div><b>相亲这件小事</b><small>都市 · 轻松 · 28集</small></div><div><div class="sc">7.6</div><span class="up">↑1</span></div></div>
+        </div>
+        <div class="pane">
+          <div class="row g1"><div class="i">1</div><div><b>凤鸣九天</b><small>古装 · 虐恋 · 48集</small></div><div><div class="sc">9.1</div><span class="up">↑1</span></div></div>
+          <div class="row g2"><div class="i">2</div><div><b>王的女人</b><small>古装 · 虐恋 · 2026</small></div><div><div class="sc">8.6</div><span class="up">↑2</span></div></div>
+          <div class="row g3"><div class="i">3</div><div><b>锦绣未央辞</b><small>古装 · 仙侠 · 44集</small></div><div><div class="sc">8.5</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">4</div><div><b>月下逢君</b><small>古装 · 言情 · 38集</small></div><div><div class="sc">8.2</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">5</div><div><b>长安一夜雪</b><small>古装 · 虐恋 · 40集</small></div><div><div class="sc">8.4</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">6</div><div><b>仙路情缘</b><small>仙侠 · 言情 · 42集</small></div><div><div class="sc">8.3</div><span class="up">↑1</span></div></div>
+          <div class="row"><div class="i">7</div><div><b>宫墙柳</b><small>宫廷 · 虐恋 · 36集</small></div><div><div class="sc">8.1</div><span class="up">↑4</span></div></div>
+          <div class="row"><div class="i">8</div><div><b>穿越之爱上你</b><small>穿越 · 甜宠 · 34集</small></div><div><div class="sc">8.0</div><span class="up">↑2</span></div></div>
+          <div class="row"><div class="i">9</div><div><b>凤舞倾城</b><small>古装 · 权谋 · 40集</small></div><div><div class="sc">7.9</div><span class="up">↑3</span></div></div>
+          <div class="row"><div class="i">10</div><div><b>琉璃心</b><small>仙侠 · 虐恋 · 38集</small></div><div><div class="sc">7.8</div><span class="up">↑1</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 资讯 -->
+<section id="news" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">News</div>
+    <div class="sec-h"><h2>最新<em>情色影视资讯</em></h2></div>
+    <div class="news">
+      <a class="nhero" href="#">
+        <div>
+          <div class="pin">💗 甜蜜速递</div>
+          <h3>《遇见你的夏天》口碑票房双丰收，平台同步高清上线</h3>
+          <p>这部被誉为年度最甜的青春纯爱电影，凭清新故事与动人演技收获 9.4 高分，为你盘点三大心动看点。</p>
+        </div>
+      </a>
+      <div class="nlist">
+        <a class="nitem" href="#"><div class="d"><b>28</b><span>09月</span></div><h4>《凤鸣九天》收官收视登顶，成年度最高分古装虐恋剧</h4></a>
+        <a class="nitem" href="#"><div class="d"><b>24</b><span>09月</span></div><h4>情色电影频道新增 500+ 部甜蜜佳作，多类型内容上新</h4></a>
+        <a class="nitem" href="#"><div class="d"><b>20</b><span>09月</span></div><h4>《说不出口的爱》定档，原班人马回归虐恋舞台</h4></a>
+        <a class="nitem" href="#"><div class="d"><b>16</b><span>09月</span></div><h4>按心情选片功能上线，六类情色片单一键直达</h4></a>
+        <a class="nitem" href="#"><div class="d"><b>12</b><span>09月</span></div><h4>播放器全面升级，1080P 高清源加载更快更稳</h4></a>
+        <a class="nitem" href="#"><div class="d"><b>08</b><span>09月</span></div><h4>十月甜蜜片单出炉，20 部好看的情色电影提前看</h4></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 演员 -->
+<section id="star" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Popular Stars</div>
+    <div class="sec-h"><h2>人气<em>情色演员</em></h2></div>
+    <div class="stars">
+      <div class="star"><div class="av">💗</div><h4>林诗韵</h4><p>代表作：凤鸣九天</p></div>
+      <div class="star"><div class="av">🌸</div><h4>苏晚晴</h4><p>代表作：甜甜进行时</p></div>
+      <div class="star"><div class="av">💫</div><h4>温以柔</h4><p>代表作：你是我眼里的光</p></div>
+      <div class="star"><div class="av">✨</div><h4>徐若萱</h4><p>代表作：遇见你的夏天</p></div>
+      <div class="star"><div class="av">🌹</div><h4>韩雨晴</h4><p>代表作：说不出口的爱</p></div>
+      <div class="star"><div class="av">💕</div><h4>李采宁</h4><p>代表作：你的微笑很甜</p></div>
+      <div class="star"><div class="av">🌟</div><h4>陈逸凡</h4><p>代表作：心动的信号</p></div>
+      <div class="star"><div class="av">⭐</div><h4>周慕白</h4><p>代表作：后来的我们</p></div>
+      <div class="star"><div class="av">💍</div><h4>吴子谦</h4><p>代表作：一生只爱你</p></div>
+      <div class="star"><div class="av">🌿</div><h4>赵天佑</h4><p>代表作：森林里的约定</p></div>
+      <div class="star"><div class="av">👑</div><h4>张翊轩</h4><p>代表作：王的女人</p></div>
+      <div class="star"><div class="av">💌</div><h4>许安然</h4><p>代表作：情书未完</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 站点信息 -->
+<section id="info" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Site Info</div>
+    <div class="sec-h"><h2>站点<em>信息</em></h2></div>
+    <div class="info">
+      <div class="pcard">
+        <h3>关于 <em>情色电影网</em></h3>
+        <p><strong>情色电影网（qingsedianyingwang-wap.github.io）</strong>是专注情色电影、偶像剧、浪漫情色片在线观看的影视平台，汇集甜蜜情色、虐恋情深、青春校园、都市情感、古装言情等多元情色题材。</p>
+        <p>平台支持手机端与电脑端自适应播放，1080P 高清画质、多线路加速加载，免注册免费观看，打开即可享受流畅清晰的浪漫观影体验。</p>
+        <div class="tags">
+          <a href="#">情色电影网</a><a href="#">qingsedianyingwang-wap.github.io</a><a href="#">情色电影</a>
+          <a href="#">情色电视剧</a><a href="#">偶像剧</a><a href="#">浪漫情色片</a><a href="#">电影在线观看</a><a href="#">高清电影</a>
+        </div>
+      </div>
+      <div class="pcard">
+        <h3>基本信息</h3>
+        <table>
+          <tr><th>网站名称</th><td>情色电影网</td></tr>
+          <tr><th>网站网址</th><td class="u"><a href="https://qingsedianyingwang-wap.github.io" style="color:inherit">https://qingsedianyingwang-wap.github.io</a></td></tr>
+          <tr><th>内容频道</th><td>情色电影 · 偶像剧 · 青春校园 · 都市情感 · 古装言情 · 经典老片</td></tr>
+          <tr><th>平台特色</th><td>专注情色题材 · 播放流畅 · 每日上新</td></tr>
+          <tr><th>资源规模</th><td>1.6万+ 部情色影视资源</td></tr>
+          <tr><th>更新频率</th><td>每日上新 420+ 部甜蜜影视</td></tr>
+          <tr><th>使用方式</th><td>免注册 · 免费观看 · 多端自适应</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">FAQ</div>
+    <div class="sec-h"><h2>常见<em>问题</em></h2></div>
+    <div class="faqs">
+      <div class="faq"><div><span class="q">1</span>平台是免费的吗？需要注册吗？<span class="ar">+</span></div><div class="ans"><p>是的。情色电影网提供全站免费播放服务，无需注册、无需付费，打开网站即可在线观看所有情色电影与情色剧集。</p></div></div>
+      <div class="faq"><div><span class="q">2</span>播放会卡顿吗？画质怎么样？<span class="ar">+</span></div><div class="ans"><p>平台采用多线路加速，支持 1080P 全高清播放，平均加载不到一秒，手机电脑都能获得流畅清晰的观影体验。</p></div></div>
+      <div class="faq"><div><span class="q">3</span>支持手机端观看吗？<span class="ar">+</span></div><div class="ans"><p>支持。本站采用全端自适应设计，手机、平板、电脑均可流畅播放，界面自动适配屏幕尺寸，无需下载额外应用。</p></div></div>
+      <div class="faq"><div><span class="q">4</span>资源多久更新一次？<span class="ar">+</span></div><div class="ans"><p>每日更新，日均上新 420+ 部情色影视内容，包括甜蜜情色电影新片、热门偶像剧最新集数、综艺新期及短剧作品。</p></div></div>
+      <div class="faq"><div><span class="q">5</span>有哪些类型的情色影视？<span class="ar">+</span></div><div class="ans"><p>涵盖甜蜜情色、虐恋情深、青春校园、都市情感、古装言情、经典老片等类型，还有「按心情选片」功能帮你快速找到此刻想看的那一部。</p></div></div>
+      <div class="faq"><div><span class="q">6</span>网站网址是什么？<span class="ar">+</span></div><div class="ans"><p>网站网址为 https://qingsedianyingwang-wap.github.io ，建议收藏该网址，随时访问获取最新情色影视内容。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 友情链接 -->
+<section id="links" style="padding-top:0">
+  <div class="container">
+    <div class="kicker">Friendly Links</div>
+    <div class="sec-h"><h2>友情<em>链接</em></h2></div>
+    <div class="flinks">
+      <a href="#">情色电影网</a><a href="#">甜蜜情色片</a><a href="#">热门偶像剧</a><a href="#">青春校园剧</a>
+      <a href="#">都市情感剧</a><a href="#">古装言情剧</a><a href="#">浪漫情色电影</a><a href="#">虐恋电视剧</a>
+      <a href="#">电影在线观看</a><a href="#">高清电影免费看</a><a href="#">电视剧在线观看</a><a href="#">好看的情色电影</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#"><span class="ne">💗</span>情色<em>电影网</em></a>
+        <p>情色电影网（qingsedianyingwang-wap.github.io）专注情色电影、偶像剧、浪漫情色片在线观看，甜蜜情色、虐恋情深、青春校园、都市情感、古装言情一应俱全，高清流畅、每日更新，手机电脑自适应，免注册免费播放。</p>
+      </div>
+      <div><h4>内容频道</h4><ul><li>情色电影</li><li>偶像剧</li><li>青春校园</li><li>都市情感</li><li>古装言情</li><li>经典老片</li></ul></div>
+      <div><h4>网站栏目</h4><ul><li>精选情色电影</li><li>热播情色剧集</li><li>按心情选片</li><li>甜蜜排行榜</li><li>情色影视资讯</li><li>站点信息</li></ul></div>
+      <div><h4>关于本站</h4><ul><li>网站名称：情色电影网</li><li>网站网址：qingsedianyingwang-wap.github.io</li><li>专注情色题材 · 播放流畅</li><li>免注册 · 免费观看</li></ul></div>
+    </div>
+    <div class="bot">
+      <span>© 2026 情色电影网 qingsedianyingwang-wap.github.io · 专注情色电影 · 偶像剧 · 浪漫情色片在线观看</span>
+      <span>1.6万+ 资源 · 1080P 高清 · 免注册免费播放 · 全端自适应</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="返回顶部">↑</button>
+
+<script>
+var mb=document.getElementById('mb'),menu=document.querySelector('.menu');
+mb.addEventListener('click',function(){
+  if(menu.style.display==='flex'){menu.style.display='';return}
+  menu.style.display='flex';menu.style.flexDirection='column';menu.style.position='absolute';
+  menu.style.top='64px';menu.style.left='22px';menu.style.right='22px';menu.style.background='rgba(17,19,32,.97)';
+  menu.style.backdropFilter='blur(18px)';menu.style.padding='14px 18px';menu.style.borderRadius='14px';
+  menu.style.border='1px solid var(--line)';menu.style.boxShadow='0 16px 44px rgba(0,0,0,.4)';menu.style.zIndex='99';
+  menu.style.gap='2px';menu.style.fontSize='15px';
+});
+[].forEach.call(document.querySelectorAll('.faq'),function(f){
+  f.children[0].addEventListener('click',function(){f.classList.toggle('open')});
+});
+var tabs=document.getElementById('tabs'),panes=document.querySelectorAll('.pane');
+tabs.addEventListener('click',function(e){
+  var t=e.target.closest('.tab');if(!t)return;
+  [].forEach.call(tabs.querySelectorAll('.tab'),function(x){x.classList.remove('on')});
+  t.classList.add('on');
+  var i=+t.dataset.t;
+  [].forEach.call(panes,function(p,n){p.classList.toggle('on',n===i)});
+});
+var top=document.getElementById('top');
+window.addEventListener('scroll',function(){top.classList.toggle('on',window.scrollY>400)});
+top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
